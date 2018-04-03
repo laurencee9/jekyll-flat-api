@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- Load the squares -->
 <div class="thumbnails-content row">
 {% for node in site.documentation %}
 {% if node.thumbnail == true %}
@@ -10,9 +11,7 @@ layout: default
 {% endfor %}
 </div>
 
-
-
-
+<!-- Load the content -->
 {% for node in site.documentation %}
   {% if node.front == true %}
   {{ node.content }}
