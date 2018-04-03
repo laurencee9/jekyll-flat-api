@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/errors/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/photos/getrandom</loc>
+</url>
+<url>
+<loc>http://localhost:4000/photos/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/photos/post</loc>
+</url>
+<url>
+<loc>http://localhost:4000/photos/put</loc>
+</url>
+<url>
+<loc>http://localhost:4000/statistics/user</loc>
+</url>
+<url>
+<loc>http://localhost:4000/statistics/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/documentation/search</loc>
+</url>
+<url>
+<loc>http://localhost:4000/documentation/settings</loc>
+</url>
+</urlset>

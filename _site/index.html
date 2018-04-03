@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>API Website</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/syntax.css">
+</head>
+<body>
+	<script defer src="assets/js/fontawesome-all.js"></script>
+
+
+	<div class="master-content center-block">
+		
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="navbar">
+					
+
+
+<ul>
+	<li class="nav-title">API Documentation</li>
+	<li class="nav-domain"><code class="highlighter-rouge">yourdomainname.com</code></li>
+	<li class="li-status"><a href="/"><span class="nav-status">API status</span></a></li>  <!-- Add the API status link -->
+	
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#errors"> Errors </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#photos"> Photos </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-a-random-photo"> Get a random photo </a></li>
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#post-a-photo"> Post a photo </a></li>
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#put-a-photo"> Put a photo </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#statistics"> Statistics </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-user-statistics"> Get user statistics </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+</ul>
+
+
+				</div>
+			</div>
+			<div class="sub-content col-sm-7">
+				
+
+<img src="assets/images/appicon@3x.png" class="shadow-image">
+
+<h1 class="welcome-header">
+  Welcome to your API Developer Dashboard
+</h1>
+<p>
+  This API documentation is inspired by the beautifully designed API of <a href="https://unsplash.com/documentation">unsplash</a>. 
+</p> 
+
+
+				<div class="thumbnails-content row">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-sm-5 thumbnail"><p><i class="fas fa-search fa-2x"></i></p>
+
+<h1 id="create-a-hotlink">Create a hotlink</h1>
+
+<p>You can have quick links to important sections using those big squares. It is easy to use, simply add a markdown file in the <code class="highlighter-rouge">thumbnails</code> section. Easy peezy!</p>
+
+<p><a href="/#photos">Jump to documentation</a></p>
+ </div>
+
+
+
+<div class="col-sm-5 thumbnail"><p><i class="fas fa-sliders-h fa-2x"></i></p>
+
+<h1 id="write-in-markdown">Write in markdown</h1>
+
+<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati.</p>
+
+<p><a href="/#errors">Jump to documentation</a></p>
+ </div>
+
+
+</div>
+
+<hr />
+
+<h1 id="errors">Errors</h1>
+
+<p>If an error occurs, whether on the server or client side, the error message(s) will be returned in an errors array. For example:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">422</span> <span class="nx">Unprocessable</span> <span class="nx">Entity</span>
+</code></pre></div></div>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"errors"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"Username is missing"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Password cannot be blank"</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<p><a href="#photos"></a></p>
+<h1 id="photos">Photos</h1>
+
+<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ul>
+  <li>
+    <p>Create a list by starting a line with  <code class="highlighter-rouge">-</code>.</p>
+  </li>
+  <li>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </li>
+  <li>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </li>
+</ul>
+
+<h2 id="get-a-random-photo">Get a random photo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /random
+</code></pre></div></div>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>None</p>
+
+<h3 id="response">Response</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">200</span> <span class="nx">OK</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Limit</span><span class="p">:</span> <span class="mi">1000</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Remaining</span><span class="p">:</span> <span class="mi">999</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><em>Note:</em> To access a user’s private data, the user is required to authorize the read_user scope. Without it, this request will return a 403 Forbidden response.</p>
+</blockquote>
+
+<h2 id="post-a-photo">Post a photo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Post /photo/
+</code></pre></div></div>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>None</p>
+
+<h3 id="response">Response</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">200</span> <span class="nx">OK</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Limit</span><span class="p">:</span> <span class="mi">1000</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Remaining</span><span class="p">:</span> <span class="mi">999</span>
+</code></pre></div></div>
+
+<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+
+<ol>
+  <li>
+    <p>Create an enumerated list by starting a line with  <code class="highlighter-rouge">1.</code></p>
+  </li>
+  <li>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </li>
+  <li>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </li>
+</ol>
+
+<h2 id="put-a-photo">Put a photo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT /photo
+</code></pre></div></div>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>None</p>
+
+<h3 id="response">Response</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pXhwzz1JtQU"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-10T11:00:01-05:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jimmyexample"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"James"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"twitter_username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jimmy"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"portfolio_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's bio"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Montreal, Qc"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_likes"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_photos"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_collections"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"followed_by_user"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"downloads"</span><span class="p">:</span><span class="w"> </span><span class="mi">4321</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uploads_remaining"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"instagram_username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"james-example"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jim@example.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"html"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://unsplash.com/jimmyexample"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"photos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/photos"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"likes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/likes"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"portfolio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/portfolio"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<hr />
+
+<h1 id="statistics">Statistics</h1>
+
+<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+<h2 id="get-user-statistics">Get user statistics</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /statistics/:userid
+</code></pre></div></div>
+
+<h3 id="parameters">Parameters</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Key</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">username</code></td>
+      <td style="text-align: center"><em>optional</em></td>
+      <td style="text-align: left">Username.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">first_name</code></td>
+      <td style="text-align: center"><em>required</em></td>
+      <td style="text-align: left">First name.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><code class="highlighter-rouge">url</code></td>
+      <td style="text-align: center"><em>optional</em></td>
+      <td style="text-align: left">Portfolio/personal URL.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="response">Response</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">200</span> <span class="nx">OK</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Limit</span><span class="p">:</span> <span class="mi">1000</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Remaining</span><span class="p">:</span> <span class="mi">999</span>
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">
+  </span><span class="s2">"profile_image"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"small"</span><span class="p">:</span><span class="w">    </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"medium"</span><span class="p">:</span><span class="w"> </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"large"</span><span class="p">:</span><span class="w">   </span><span class="err">...</span><span class="w">
+    </span><span class="s2">"custom"</span><span class="p">:</span><span class="w">  </span><span class="s2">"https://images.unsplash.com/your-custom-image.jpg?q=80&amp;fm=jpg&amp;crop=faces&amp;fit=crop&amp;h=100&amp;w=100"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+ 
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

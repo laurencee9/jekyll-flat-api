@@ -1,0 +1,48 @@
+body { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"; font-size: 18px; line-height: 1.5; color: #24292e; background-color: #fff; }
+
+a { color: #0366d6; }
+
+code, pre { font-family: Menlo, Consolas, "Consolas for Powerline", "Courier New", Courier, monospace; background-color: #2b2b2b; color: #fff; padding: 0.25em; }
+
+body { max-width: 100%; font-size: 15px; color: #404040; }
+
+a { color: gray; }
+
+.shadow-image { box-shadow: 0px 0px 10px grey; border-radius: 40px; }
+
+.master-content { max-width: 1200px; padding-bottom: 100px; padding-left: 15px; }
+.master-content hr { margin-top: 60px; border: 0; border-top: 1px solid #D9D9D9; box-shadow: none; }
+.master-content table tbody td { border: 1px solid #F0F0F0; padding: 8px 30px 8px 4px; }
+.master-content p { color: #404040; }
+
+.sub-content { padding-top: 60px; }
+.sub-content ul { list-style-type: circle; color: #005291; }
+.sub-content h1 { margin-top: 60px; margin-bottom: 20px; font-size: 29px; color: #404040; }
+.sub-content h2 { margin-top: 80px; font-size: 24px; }
+.sub-content h3 { margin-top: 30px; margin-bottom: 10px; padding-bottom: 0px; font-size: 15px; }
+.sub-content p { margin-top: 0; margin-bottom: 20px; }
+.sub-content .highlight, .sub-content code { color: gray; background-color: #F0F0F0; }
+.sub-content .highlight { border-radius: 4px; margin: 0; }
+.sub-content .highlighter-rouge { background-color: #F0F0F0; max-height: 400px; overflow: auto; padding: 4px 4px 4px 4px; border-radius: 4px; margin-bottom: 20px; }
+.sub-content .welcome-header { font-size: 34px; }
+.sub-content blockquote { margin: 0 0 0 0; padding: 8px 8px 8px 8px; border-left: 4px solid #FFFEBA; background-color: #FFFEBA; }
+.sub-content blockquote p { padding: 0; margin: 0; color: #7C7C7C; }
+.sub-content .thumbnails-content .thumbnail { border: 1px solid #D9D9D9; border-radius: 4px; min-height: 250px; padding: 20px 20px 0px 20px; margin: 10px; max-width: 250px; }
+.sub-content .thumbnails-content h1 { font-size: 20px; margin: 0 0 0 0; padding-bottom: 10px; }
+.sub-content .thumbnails-content p { font-size: 13px; }
+.sub-content .thumbnails-content a { color: gray; }
+
+.navbar { position: fixed; top: 0; padding-top: 100px; overflow: auto; }
+.navbar li { list-style-type: none; padding: 0; }
+.navbar .nav-title { color: #404040; font-weight: bold; font-size: 18px; }
+.navbar .nav-domain code { font-size: 14px; color: #404040; background-color: white; }
+.navbar .nav-status { background-color: #A1FFB6; padding: 4px 8px 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+.navbar .li-status { margin-top: 10px; margin-bottom: 30px; }
+.navbar .li-status a { text-decoration: none; color: #404040; }
+.navbar .li-main { margin-top: 30px; margin-bottom: 4px; }
+.navbar .li-sub { margin-top: 4px; }
+.navbar .main-nav { text-decoration: none; color: #404040; font-weight: bold; }
+.navbar .sub-nav { font-size: 14px; color: gray; }
+.navbar .sub-ul { margin-left: -20px; }
+
+@media (max-width: 767px) { .navbar { visibility: hidden; } }

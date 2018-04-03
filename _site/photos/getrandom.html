@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>API Website</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/syntax.css">
+</head>
+<body>
+	<script defer src="assets/js/fontawesome-all.js"></script>
+
+
+	<div class="master-content center-block">
+		
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="navbar">
+					
+
+
+<ul>
+	<li class="nav-title">API Documentation</li>
+	<li class="nav-domain"><code class="highlighter-rouge">yourdomainname.com</code></li>
+	<li class="li-status"><a href="/"><span class="nav-status">API status</span></a></li>  <!-- Add the API status link -->
+	
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#errors"> Errors </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#photos"> Photos </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-a-random-photo"> Get a random photo </a></li>
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#post-a-photo"> Post a photo </a></li>
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#put-a-photo"> Put a photo </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#statistics"> Statistics </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-user-statistics"> Get user statistics </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+</ul>
+
+
+				</div>
+			</div>
+			<div class="sub-content col-sm-7">
+				
+
+<img src="assets/images/appicon@3x.png" class="shadow-image">
+
+<h1 class="welcome-header">
+  Welcome to your API Developer Dashboard
+</h1>
+<p>
+  This API documentation is inspired by the beautifully designed API of <a href="https://unsplash.com/documentation">unsplash</a>. 
+</p> 
+
+
+				<h2 id="get-a-random-photo">Get a random photo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET /random
+</code></pre></div></div>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>None</p>
+
+<h3 id="response">Response</h3>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">200</span> <span class="nx">OK</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Limit</span><span class="p">:</span> <span class="mi">1000</span>
+<span class="nx">X</span><span class="o">-</span><span class="nx">Ratelimit</span><span class="o">-</span><span class="nx">Remaining</span><span class="p">:</span> <span class="mi">999</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p><em>Note:</em> To access a user’s private data, the user is required to authorize the read_user scope. Without it, this request will return a 403 Forbidden response.</p>
+</blockquote>
+
+ 
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

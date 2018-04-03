@@ -1,0 +1,15 @@
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+sass:
+  style: compact # possible values: nested expanded compact compressed
+
+
+collections:
+  documentation:
+    output: true
+    permalink: /:collection/:name
+
+
+relative_permalinks: false

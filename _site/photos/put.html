@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>API Website</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/syntax.css">
+</head>
+<body>
+	<script defer src="assets/js/fontawesome-all.js"></script>
+
+
+	<div class="master-content center-block">
+		
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="navbar">
+					
+
+
+<ul>
+	<li class="nav-title">API Documentation</li>
+	<li class="nav-domain"><code class="highlighter-rouge">yourdomainname.com</code></li>
+	<li class="li-status"><a href="/"><span class="nav-status">API status</span></a></li>  <!-- Add the API status link -->
+	
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#errors"> Errors </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#photos"> Photos </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-a-random-photo"> Get a random photo </a></li>
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#post-a-photo"> Post a photo </a></li>
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#put-a-photo"> Put a photo </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+		
+	
+		
+			<li class="li-main"><a class="main-nav" href="/#statistics"> Statistics </a></li>
+			<ul class="sub-ul">
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+			
+				
+					<li class="li-sub"><a class="sub-nav" href="/#get-user-statistics"> Get user statistics </a></li>
+				
+			
+				
+			
+				
+			
+				
+			
+			</ul>
+		
+	
+		
+	
+		
+	
+</ul>
+
+
+				</div>
+			</div>
+			<div class="sub-content col-sm-7">
+				
+
+<img src="assets/images/appicon@3x.png" class="shadow-image">
+
+<h1 class="welcome-header">
+  Welcome to your API Developer Dashboard
+</h1>
+<p>
+  This API documentation is inspired by the beautifully designed API of <a href="https://unsplash.com/documentation">unsplash</a>. 
+</p> 
+
+
+				<h2 id="put-a-photo">Put a photo</h2>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PUT /photo
+</code></pre></div></div>
+
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>None</p>
+
+<h3 id="response">Response</h3>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"pXhwzz1JtQU"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"updated_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2016-07-10T11:00:01-05:00"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jimmyexample"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"first_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"James"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"last_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Example"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"twitter_username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jimmy"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"portfolio_url"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"bio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The user's bio"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Montreal, Qc"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_likes"</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_photos"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"total_collections"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"followed_by_user"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"downloads"</span><span class="p">:</span><span class="w"> </span><span class="mi">4321</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"uploads_remaining"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"instagram_username"</span><span class="p">:</span><span class="w"> </span><span class="s2">"james-example"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jim@example.com"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"html"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://unsplash.com/jimmyexample"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"photos"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/photos"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"likes"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/likes"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"portfolio"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://api.unsplash.com/users/jimmyexample/portfolio"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+ 
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

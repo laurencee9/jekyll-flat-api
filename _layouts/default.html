@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>API Website</title>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/syntax.css">
+</head>
+<body>
+	<script defer src="assets/js/fontawesome-all.js"></script>
+
+
+	<div class="master-content center-block">
+		
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="navbar">
+					{% include nav.html %}
+				</div>
+			</div>
+			<div class="sub-content col-sm-7">
+				{% include home.html %}
+
+				{{ content }} 
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>
