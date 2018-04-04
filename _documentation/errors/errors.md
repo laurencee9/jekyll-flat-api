@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Errors
-anchor: errors
 front: true
+order: 3
 permalink: /errors/
 ---
 
 -------------------
-# Errors
+# {{page.title}}
 
 If an error occurs, whether on the server or client side, the error message(s) will be returned in an errors array. For example:
 

@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Get a random photo
-anchor: get-a-random-photo
 front: false
 permalink: /photos/getrandom
 ---
 
-## Get a random photo
+## {{page.title}}
 
 
 ```

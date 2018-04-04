@@ -22,6 +22,9 @@
 <loc>http://localhost:4000/statistics/user</loc>
 </url>
 <url>
+<loc>http://localhost:4000/statistics/search-best-user</loc>
+</url>
+<url>
 <loc>http://localhost:4000/statistics/</loc>
 </url>
 <url>

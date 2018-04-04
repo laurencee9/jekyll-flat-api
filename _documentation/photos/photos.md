@@ -3,6 +3,7 @@ layout: default
 title: Photos
 anchor: photos
 front: true
+order: 1
 permalink: /photos/
 ---
 

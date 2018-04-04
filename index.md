@@ -12,7 +12,8 @@ layout: default
 </div>
 
 <!-- Load the content -->
-{% for node in site.documentation %}
+{% assign sorted = site.documentation | sort: 'order' %}
+{% for node in sorted %}
   {% if node.front == true %}
   {{ node.content }}
   {% for subpage in site.documentation %}
@@ -22,4 +23,3 @@ layout: default
   {% endfor %}
   {% endif %}
 {% endfor %}
-

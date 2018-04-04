@@ -101,7 +101,7 @@ a {
 		font-size: 34px;
 	}
 	blockquote {
-		margin: 0 0 0 0;
+		margin: 0 0 10px 0;
 		padding: 8px 8px 8px 8px;
 		border-left: 4px solid $block-quote-bg;
 		background-color: $block-quote-bg;
@@ -138,10 +138,16 @@ a {
 
 
 .navbar {
+
 	position: fixed;
-	top: 0;
-	padding-top: 100px;
+	top: 0px;
 	overflow: auto;
+	height: 100%;
+	width: 100%;
+
+	.master-ul {
+		padding-top: 100px;
+	}
 	li {
 		list-style-type: none;
     	padding: 0;
@@ -176,7 +182,7 @@ a {
     	}
     }
     .li-main {
-    	margin-top: 30px;
+    	margin-top: 20px;
     	margin-bottom: 4px;
     }
     .li-sub {

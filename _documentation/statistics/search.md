@@ -1,26 +1,22 @@
 ---
 layout: default
-title: Get user statistics
-anchor: get-user-statistics
+title: Search best user
 front: false
-permalink: /statistics/user
+permalink: /statistics/search-best-user
 ---
 
 
-## Get user statistics
+## {{page.title}}
+
+Get the 5 best users.
 
 ```
-GET /statistics/:userid
+GET /statistics/search
 ```
 
 ### Parameters
 
-
-| Key  |       |  Description |
-|:------------|:-------------:|:------|
-| `username`   | *optional* | Username. |
-| `first_name`       | *required* | First name. |
-| `url` | *optional* | Portfolio/personal URL.|
+None
 
 ### Response
 

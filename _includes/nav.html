@@ -1,18 +1,21 @@
 
 
 
-<ul>
+<ul class="master-ul">
 	<li class="nav-title">API Documentation</li>
 	<li class="nav-domain"><code class="highlighter-rouge">yourdomainname.com</code></li>
 	<li class="li-status"><a href="/"><span class="nav-status">API status</span></a></li>  <!-- Add the API status link -->
 	
-	{% for node in site.documentation %}
+	{% assign sorted = site.documentation | sort: 'order' %}
+	{% for node in sorted %}
 		{% if node.front == true %}
-			<li class="li-main"><a class="main-nav" href="/#{{node.anchor}}"> {{node.title}} </a></li>
+			<li class="li-main"><a class="main-nav" id="{{node.title}}"> {{node.title}} </a></li>
+			<script type="text/javascript">title2anchor("{{node.title}}")</script>
 			<ul class="sub-ul">
 			{% for subpage in site.documentation %}
 				{% if subpage.front == false and subpage.permalink contains node.permalink %}
-					<li class="li-sub"><a class="sub-nav" href="/#{{subpage.anchor}}"> {{subpage.title}} </a></li>
+					<li class="li-sub"><a class="sub-nav" id="{{subpage.title}}"> {{subpage.title}} </a></li>
+					<script type="text/javascript">title2anchor("{{subpage.title}}")</script>
 				{%  endif %}
 			{% endfor %}
 			</ul>

@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Post a photo
-anchor: post-a-photo
 front: false
 permalink: /photos/post
 ---
 
-## Post a photo
+## {{page.title}}
 
 
 ```

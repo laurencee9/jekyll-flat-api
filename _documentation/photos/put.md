@@ -1,12 +1,11 @@
 ---
 layout: default
 title: Put a photo
-anchor: put-a-photo
 front: false
 permalink: /photos/put
 ---
 
-## Put a photo
+## {{page.title}}
 
 ```
 PUT /photo
