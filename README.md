@@ -2,6 +2,8 @@
 
 A Jekyll theme for API documentation. It is inspired by the beautifully designed API of <a href="https://unsplash.com/documentation">unsplash</a>. 
 
+[**Click here for demo**](https://jekyll-theme-api-documentation.github.io)
+
 ![](./assets/images/example1.png) 
 
 
